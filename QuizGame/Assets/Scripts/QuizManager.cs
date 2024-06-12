@@ -23,6 +23,4 @@ public class QuizManager : MonoBehaviour
             SelectQuiz(themeSelected, dificultySelected);
         }
     }
-
-
 }

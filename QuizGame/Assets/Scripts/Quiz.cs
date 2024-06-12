@@ -22,7 +22,7 @@ public class Quiz : ScriptableObject
     public Theme GetTheme { get => theme; }
     public Dificulty GetDificulty { get => dificulty; }
 
-    public enum Theme { Portuguese, Math, Geography};
+    public enum Theme { Mathematic, Portuguese, English};
     public enum Dificulty { Easy, Medium, Hard};
 
     public bool CheckAnswer(int answerSelected)
