@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72697466b04e3cb4f96a1ee0f15a9685, type: 3}
   m_Name: NewQuiz 3
   m_EditorClassIdentifier: 
-  question: 
+  question: "Quanto \xE9 2 X 5"
   answers:
-  - 
-  - 
-  - 
-  - 
-  correctAnswer: 0
-  theme: 2
+  - 3
+  - 7
+  - 4
+  - 10
+  correctAnswer: 3
+  theme: 0
   dificulty: 0
