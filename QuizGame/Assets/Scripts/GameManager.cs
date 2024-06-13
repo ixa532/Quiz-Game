@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     #region Singleton
     public static GameManager instance;
-    public void Awake()
+    private void Awake()
     {
         instance = this;
     }
@@ -35,5 +35,13 @@ public class GameManager : MonoBehaviour
         quizManager.SelectQuiz(theme, dificulty);
         
     }
+    public Quiz.Dificulty Dificulty { get => dificulty; }
+    public Quiz.Theme Theme { get => theme;}
+
+    public void GameOver()
+    { 
+    
+    }
+   
 }
 
