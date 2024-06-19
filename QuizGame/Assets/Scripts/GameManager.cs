@@ -16,12 +16,17 @@ public class GameManager : MonoBehaviour
     Quiz.Dificulty dificulty;
     Quiz.Theme theme;
 
+    public Quiz.Dificulty Dificulty { get => dificulty; } //get somente leitura
+    public Quiz.Theme Theme { get => theme; }
+
     QuizManager quizManager;
     private void Start()
     {
         quizManager = FindObjectOfType<QuizManager>();
     }
+
     //Inicia o jogo quando o botão iniciar do menu for precionado
+
     public void StartGame(int dificultySelected, int themeSelected)
     {
         //Fechar a janela do Menu
@@ -35,12 +40,10 @@ public class GameManager : MonoBehaviour
         quizManager.SelectQuiz(theme, dificulty);
         
     }
-    public Quiz.Dificulty Dificulty { get => dificulty; }
-    public Quiz.Theme Theme { get => theme;}
 
     public void GameOver()
     { 
-    
+    //Implementação do que acontece quando o jogo acaba;
     }
    
 }

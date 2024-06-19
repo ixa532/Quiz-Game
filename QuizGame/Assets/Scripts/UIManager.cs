@@ -37,8 +37,10 @@ public class UIManager : MonoBehaviour
         
     public void UpdateQuestion(Quiz quizSelected)
     {
+        questionText.text = quizSelected.Question;
 
         for(int i = 0; i < answersButtons.Length; i++)
+
         {
             answersButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = quizSelected.Answers[i]; // iterador é o controlador do for
             answersButtons[i].interactable = true;

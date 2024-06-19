@@ -34,9 +34,12 @@ public class QuizManager : MonoBehaviour
     {
         instance = this;
     }
-    #endregion
+    #endregion 
 
-    public void CheckAnswer (int answerSelected)
+
+    //Singleton //garantir para que tenha apenas uma instancia
+
+    public void CheckAnswer (int answerSelected) //checar IF
     {
         if (answerSelected == currentQuiz.CorrectAnswer)
         {
